@@ -1,0 +1,43 @@
+[
+    {
+        "key": "name",
+        "label": "Name",
+        "type": "string"
+      },
+      
+    {
+    "key": "compiled_prompt",
+    "label": "Compiled Prompt",
+    "type": "string"
+  },
+  {
+    "key": "character_card",
+    "label": "Character Card",
+    "type": "string"
+  },
+  {
+    "key": "world_card",
+    "label": "World Card",
+    "type": "string"
+  },
+  {
+    "key": "scene_card",
+    "label": "Scene Card",
+    "type": "string"
+  },
+  {
+    "key": "prop_card",
+    "label": "Prop Card",
+    "type": "string"
+  },
+  {
+    "key": "event_card",
+    "label": "Event Card",
+    "type": "string"
+  },
+  {
+    "key": "shot_card",
+    "label": "Shot Card",
+    "type": "string"
+  }
+]

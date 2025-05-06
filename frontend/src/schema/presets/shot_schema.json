@@ -1,0 +1,114 @@
+[
+  { "key": "shot_name", "label": "Shot Name", "type": "string", "required": true },
+
+  {
+    "key": "camera_angle",
+    "label": "Camera Angle",
+    "type": "string",
+    "options": [
+      "Eye-Level", "Low Angle", "High Angle", "Overhead (Bird's Eye)", "Worm's Eye", "Dutch Tilt", "Over-the-Shoulder", "POV", "Tracking Shot", "Insert Shot", "Establishing Shot", "Close-Up", "Extreme Close-Up", "Medium Shot", "Wide Shot", "Extreme Wide Shot"
+    ]
+  },
+
+  {
+    "key": "subject_focus",
+    "label": "Subject Focus",
+    "type": "string",
+    "options": [
+      "Single Character", "Multiple Characters", "Prop", "Landscape", "Silhouette", "Eyes Only", "Hands Only", "Back of Head", "Full Body", "Object POV"
+    ]
+  },
+
+  {
+    "key": "camera_movement",
+    "label": "Camera Movement",
+    "type": "string",
+    "options": [
+      "Static", "Pan", "Tilt", "Zoom In", "Zoom Out", "Dolly In", "Dolly Out", "Crane", "Handheld", "Steadicam", "Tracking", "Push In", "Pull Back", "Spin", "Jitter"
+    ]
+  },
+
+  {
+    "key": "framing_style",
+    "label": "Framing Style",
+    "type": "string",
+    "options": [
+      "Centered", "Rule of Thirds", "Symmetrical", "Asymmetrical", "Off-Center", "Profile View", "Foreground/Background Split", "Layered Depth", "Negative Space"
+    ]
+  },
+
+  {
+    "key": "lighting_style",
+    "label": "Lighting Style",
+    "type": "string",
+    "options": [
+      "Natural Light", "Studio Light", "Low-Key", "High-Key", "Backlit", "Side Lit", "Silhouette", "Harsh Shadows", "Soft Ambient", "Flickering", "Candlelit", "Spotlight"
+    ]
+  },
+
+  {
+    "key": "color_tone",
+    "label": "Color Tone / Palette",
+    "type": "string",
+    "options": [
+      "Warm", "Cool", "Monochrome", "Neon", "Sepia", "Technicolor", "Black and White", "Muted", "Vibrant", "Day-for-Night", "Film Emulation"
+    ]
+  },
+
+  {
+    "key": "focus_type",
+    "label": "Focus Type",
+    "type": "string",
+    "options": [
+      "Shallow Focus", "Deep Focus", "Rack Focus", "Soft Focus", "Tilt-Shift", "Bokeh", "Split Diopter"
+    ]
+  },
+
+  {
+    "key": "aspect_ratio",
+    "label": "Aspect Ratio",
+    "type": "string",
+    "options": [
+      "1:1 (Square)", "4:3 (Classic)", "16:9 (HD)", "2.39:1 (Cinematic Widescreen)", "Vertical (Story Mode)"
+    ]
+  },
+
+  {
+    "key": "composition_keywords",
+    "label": "Composition Keywords",
+    "type": "string",
+    "placeholder": "e.g. symmetry, depth of field, silhouettes, negative space"
+  },
+
+  {
+    "key": "emotion_conveyed",
+    "label": "Emotion Conveyed",
+    "type": "string",
+    "options": [
+      "Tension", "Hope", "Loneliness", "Power", "Fear", "Awe", "Suspense", "Peace", "Confusion", "Determination", "Romance", "Nostalgia"
+    ]
+  },
+
+  {
+    "key": "lens_type",
+    "label": "Lens Type",
+    "type": "string",
+    "options": [
+      "Wide Angle", "Standard", "Telephoto", "Fisheye", "Macro", "Tilt-Shift", "Zoom"
+    ]
+  },
+
+  {
+    "key": "special_effects",
+    "label": "Special Effects or Filters",
+    "type": "string",
+    "placeholder": "e.g. glitch effect, film grain, blur, bloom, color bleed"
+  },
+
+  {
+    "key": "scene_context",
+    "label": "Scene Context (Optional)",
+    "type": "string",
+    "placeholder": "Describe what is happening in the scene or what this shot reveals"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  { "key": "scene_name", "label": "Scene Name", "type": "string", "required": true },
+
+  {
+    "key": "environment_type",
+    "label": "Environment Type",
+    "type": "string",
+    "options": [
+      "Indoor", "Outdoor", "Underground", "Underwater", "Skyborne", "Virtual/Simulated"
+    ]
+  },
+
+  {
+    "key": "geographic_location",
+    "label": "Geographic Location",
+    "type": "string",
+    "placeholder": "e.g. Arctic glacier, Saharan desert, Tokyo alley, Wild West frontier"
+  },
+
+  {
+    "key": "landscape_features",
+    "label": "Landscape Features",
+    "type": "string",
+    "placeholder": "e.g. jagged cliffs, rolling dunes, dense forest, volcanic rock"
+  },
+
+  {
+    "key": "built_environment",
+    "label": "Built Environment",
+    "type": "string",
+    "placeholder": "e.g. medieval castle, neon-lit diner, crumbling ruins, cargo freighter"
+  },
+
+  {
+    "key": "weather",
+    "label": "Weather",
+    "type": "string",
+    "options": [
+      "Clear", "Cloudy", "Rainy", "Stormy", "Foggy", "Snowy", "Windy", "Hazy", "Dust Storm", "Drizzle", "Lightning", "Ashfall", "Ethereal Glow"
+    ]
+  },
+
+  {
+    "key": "time_of_day",
+    "label": "Time of Day",
+    "type": "string",
+    "options": [
+      "Dawn", "Morning", "Noon", "Afternoon", "Dusk", "Night", "Midnight", "Golden Hour", "Blue Hour"
+    ]
+  },
+
+  {
+    "key": "season",
+    "label": "Season",
+    "type": "string",
+    "options": [
+      "Spring", "Summer", "Autumn", "Winter", "Monsoon", "Dry Season", "Unknown"
+    ]
+  },
+
+  {
+    "key": "lighting_conditions",
+    "label": "Lighting Conditions",
+    "type": "string",
+    "options": [
+      "Natural Light", "Artificial Light", "Firelight", "Moonlight", "Lanterns", "Strobe", "Mixed", "Unlit/Dark"
+    ]
+  },
+
+  {
+    "key": "atmospheric_effects",
+    "label": "Atmospheric Effects",
+    "type": "string",
+    "placeholder": "e.g. floating particles, ambient mist, glowing spores, embers"
+  },
+
+  {
+    "key": "terrain_type",
+    "label": "Terrain Type",
+    "type": "string",
+    "options": [
+      "Urban", "Rural", "Mountainous", "Coastal", "Forest", "Desert", "Plains", "Swamp", "Tundra", "Cavern", "Oceanic", "Futuristic"
+    ]
+  },
+
+  {
+    "key": "scene_mood",
+    "label": "Scene Mood",
+    "type": "string",
+    "options": [
+      "Peaceful", "Chaotic", "Tense", "Eerie", "Hopeful", "Gritty", "Mystical", "Majestic", "Desolate", "Romantic", "Industrial", "Surreal"
+    ]
+  },
+
+  {
+    "key": "notable_elements",
+    "label": "Notable Visual Elements",
+    "type": "string",
+    "placeholder": "e.g. towering statues, crashed ship, ancient symbols, vines overtaking structures"
+  },
+
+  {
+    "key": "ambient_sound_description",
+    "label": "Ambient Sound (Optional)",
+    "type": "string",
+    "placeholder": "e.g. wind howling, distant thunder, dripping water, chimes, whispers"
+  }
+]

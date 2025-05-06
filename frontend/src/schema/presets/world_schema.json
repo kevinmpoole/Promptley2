@@ -1,0 +1,104 @@
+[
+  { "key": "world_name", "label": "World Name", "type": "string", "required": true },
+
+  {
+    "key": "primary_terrain",
+    "label": "Primary Terrain",
+    "type": "string",
+    "options": ["Desert", "Ocean", "Jungle", "Mountains", "Plains", "Forest", "Cityscape", "Wasteland", "Frozen", "Volcanic", "Other"]
+  },
+
+  {
+    "key": "dominant_cultures",
+    "label": "Dominant Cultures or Factions",
+    "type": "string"
+  },
+
+  {
+    "key": "time_period",
+    "label": "Time Period",
+    "type": "string",
+    "options": ["Ancient", "Medieval", "Industrial", "Modern", "Retro-Future", "Cyberpunk", "Post-Apocalyptic", "Futuristic", "Timeless", "Other"]
+  },
+
+  {
+    "key": "tech_level",
+    "label": "Technology Level",
+    "type": "string",
+    "options": ["Primitive", "Agrarian", "Mechanical", "Electric", "Digital", "Advanced AI", "Interstellar", "Magitech", "Mixed"]
+  },
+
+  {
+    "key": "weather_patterns",
+    "label": "Typical Weather",
+    "type": "string"
+  },
+
+  {
+    "key": "dominant_color_palette",
+    "label": "Dominant Color Palette",
+    "type": "string"
+  },
+
+  {
+    "key": "architectural_style",
+    "label": "Architecture or Design Motifs",
+    "type": "string"
+  },
+
+  {
+    "key": "atmosphere",
+    "label": "Atmosphere / Mood / Vibe",
+    "type": "string",
+    "options": ["Bleak", "Majestic", "Claustrophobic", "Mystical", "Industrial", "Rustic", "Surreal", "Peaceful", "Chaotic", "Other"]
+  },
+
+  {
+    "key": "landmarks",
+    "label": "Iconic Landmarks or Structures",
+    "type": "string"
+  },
+
+  {
+    "key": "flora_and_fauna",
+    "label": "Typical Plants and Creatures",
+    "type": "string"
+  },
+
+  {
+    "key": "transport",
+    "label": "Common Transportation",
+    "type": "string"
+  },
+
+  {
+    "key": "sounds_and_scents",
+    "label": "Ambient Sounds and Smells",
+    "type": "string"
+  },
+
+  {
+    "key": "known_conflicts",
+    "label": "Wars / Factions / Conflicts",
+    "type": "string"
+  },
+
+  {
+    "key": "magical_or_scientific_rules",
+    "label": "Magic / Physics / Tech Rules",
+    "type": "string"
+  },
+
+  {
+    "key": "narrative_tone",
+    "label": "Narrative Tone",
+    "type": "string",
+    "options": ["Dark", "Hopeful", "Absurdist", "Romantic", "Paranoid", "Tragic", "Heroic", "Neutral"]
+  },
+
+  {
+    "key": "notable_features",
+    "label": "Other Notable Features",
+    "type": "string"
+  }
+]

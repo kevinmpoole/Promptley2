@@ -1,0 +1,57 @@
+[
+  {
+    "key": "name",
+    "label": "Name",
+    "type": "string"
+  },
+  {
+    "key": "event_type",
+    "label": "Event Type",
+    "type": "string"
+  },
+  {
+    "key": "location",
+    "label": "Location",
+    "type": "string"
+  },
+  {
+    "key": "time_of_day",
+    "label": "Time of Day",
+    "type": "string"
+  },
+  {
+    "key": "weather",
+    "label": "Weather Conditions",
+    "type": "string"
+  },
+  {
+    "key": "participants",
+    "label": "Participants",
+    "type": "string"
+  },
+  {
+    "key": "tone",
+    "label": "Tone / Mood",
+    "type": "string"
+  },
+  {
+    "key": "background_activity",
+    "label": "Background Activity",
+    "type": "string"
+  },
+  {
+    "key": "notable_actions",
+    "label": "Notable Actions or Moments",
+    "type": "string"
+  },
+  {
+    "key": "soundscape",
+    "label": "Soundscape / Noise",
+    "type": "string"
+  },
+  {
+    "key": "custom_prompt",
+    "label": "Custom Prompt Add-On",
+    "type": "string"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "character": {
+    "cardType": "character",
+    "fields": [
+      { "key": "age", "label": "Age", "type": "number", "required": true },
+      { "key": "gender", "label": "Gender", "type": "text" },
+      { "key": "height", "label": "Height (in)", "type": "number" },
+      { "key": "weight", "label": "Weight (lbs)", "type": "number" },
+      { "key": "build", "label": "Build", "type": "text" },
+      { "key": "skin_tone", "label": "Skin Tone", "type": "text" },
+      { "key": "faceShape", "label": "Face Shape", "type": "text" },
+      { "key": "eyeSpacing", "label": "Eye Spacing", "type": "text" },
+      { "key": "jawWidth", "label": "Jaw Width", "type": "text" },
+      { "key": "noseLength", "label": "Nose Length", "type": "text" },
+      { "key": "mouthSize", "label": "Mouth Size", "type": "text" },
+      { "key": "hair", "label": "Hair", "type": "text" },
+      { "key": "facial_hair", "label": "Facial Hair", "type": "text" },
+      { "key": "eye_color", "label": "Eye Color", "type": "text" },
+      { "key": "voice", "label": "Voice", "type": "text" },
+      { "key": "demeanor", "label": "Demeanor", "type": "text" },
+      { "key": "role", "label": "Role", "type": "text" },
+      { "key": "backstory", "label": "Backstory", "type": "textarea" },
+      { "key": "personality", "label": "Personality", "type": "textarea" },
+      { "key": "clothing", "label": "Clothing", "type": "textarea" },
+      { "key": "accessories", "label": "Accessories", "type": "textarea" },
+      { "key": "signature_item", "label": "Signature Item", "type": "text" },
+      { "key": "origin", "label": "Origin", "type": "text" },
+      { "key": "affiliation", "label": "Affiliation", "type": "text" },
+      { "key": "tags", "label": "Tags", "type": "text" },
+      { "key": "prompt", "label": "Prompt", "type": "textarea" }
+    ]
+  },
+  "world": {
+    "cardType": "world",
+    "fields": [
+      { "key": "location", "label": "Location", "type": "text", "required": true },
+      { "key": "terrain", "label": "Terrain", "type": "text" },
+      { "key": "climate", "label": "Climate", "type": "text" },
+      { "key": "culture", "label": "Culture", "type": "text" },
+      { "key": "tech_level", "label": "Technology Level", "type": "text" },
+      { "key": "time_period", "label": "Time Period", "type": "text" },
+      { "key": "notable_features", "label": "Notable Features", "type": "textarea" }
+    ]
+  }
+}

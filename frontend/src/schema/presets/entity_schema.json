@@ -1,0 +1,79 @@
+[
+  { "key": "name", "label": "Name", "type": "string", "required": true },
+
+  { "key": "title", "label": "Title or Nickname", "type": "string" },
+
+  {
+    "key": "species",
+    "label": "Species / Race",
+    "type": "string",
+    "options": ["Human", "Elf", "Android", "Alien", "Mutant", "Anthro", "Other"]
+  },
+
+  {
+    "key": "gender",
+    "label": "Gender Identity",
+    "type": "string",
+    "options": ["Male", "Female", "Non-binary", "Other"]
+  },
+
+  { "key": "age", "label": "Age", "type": "number" },
+  { "key": "height", "label": "Height (inches)", "type": "number" },
+
+  {
+    "key": "build",
+    "label": "Body Type",
+    "type": "string",
+    "options": ["Slim", "Athletic", "Muscular", "Stocky", "Petite", "Heavyset", "Tall & Lanky"]
+  },
+
+  {
+    "key": "skin_tone",
+    "label": "Skin Tone",
+    "type": "string",
+    "options": ["Fair", "Olive", "Tan", "Brown", "Dark", "Pale", "Freckled", "Synthetic", "Other"]
+  },
+
+  { "key": "eye_color", "label": "Eye Color", "type": "string" },
+  { "key": "hair_color", "label": "Hair Color", "type": "string" },
+
+  {
+    "key": "hairstyle",
+    "label": "Hairstyle",
+    "type": "string",
+    "options": ["Short", "Long", "Braided", "Mohawk", "Curly", "Shaved", "Other"]
+  },
+
+  {
+    "key": "facial_hair",
+    "label": "Facial Hair",
+    "type": "string",
+    "options": ["None", "Beard", "Goatee", "Moustache", "Stubble", "Other"]
+  },
+
+  { "key": "faceShape", "label": "Face Shape", "type": "string" },
+  { "key": "eyeSpacing", "label": "Eye Spacing", "type": "string" },
+  { "key": "jawWidth", "label": "Jaw Width", "type": "string" },
+  { "key": "noseLength", "label": "Nose Length", "type": "string" },
+  { "key": "mouthSize", "label": "Mouth Size", "type": "string" },
+
+  { "key": "pose", "label": "Pose (optional)", "type": "string" },
+  { "key": "expression", "label": "Expression (optional)", "type": "string" },
+
+  { "key": "outfit", "label": "Outfit Description", "type": "string" },
+  { "key": "accessories", "label": "Accessories or Props", "type": "string" },
+  { "key": "signature_item", "label": "Signature Item", "type": "string" },
+  { "key": "style_keywords", "label": "Aesthetic Keywords", "type": "string" },
+
+  {
+    "key": "role",
+    "label": "Narrative Role",
+    "type": "string",
+    "options": ["Hero", "Villain", "Sidekick", "Antihero", "Guide", "Rogue", "Scholar", "Wildcard", "Other"]
+  },
+
+  { "key": "personality_traits", "label": "Core Personality Traits", "type": "string" },
+  { "key": "backstory_snippet", "label": "Backstory Snippet", "type": "string" },
+  { "key": "world_affiliation", "label": "World / Setting", "type": "string" },
+  { "key": "visual_notes", "label": "Extra Visual Notes", "type": "string" }
+]

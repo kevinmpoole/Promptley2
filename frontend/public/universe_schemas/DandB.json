@@ -1,0 +1,470 @@
+{
+  "character": [
+    {
+      "key": "gender",
+      "label": "Gender",
+      "type": "string"
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "type": "number"
+    },
+    {
+      "key": "height",
+      "label": "Height (in)",
+      "type": "number"
+    },
+    {
+      "key": "weight",
+      "label": "Weight (lbs)",
+      "type": "number"
+    },
+    {
+      "key": "build",
+      "label": "Build",
+      "type": "string"
+    },
+    {
+      "key": "skin_tone",
+      "label": "Skin Tone",
+      "type": "string"
+    },
+    {
+      "key": "faceShape",
+      "label": "Face Shape",
+      "type": "string"
+    },
+    {
+      "key": "eyeSpacing",
+      "label": "Eye Spacing",
+      "type": "string"
+    },
+    {
+      "key": "jawWidth",
+      "label": "Jaw Width",
+      "type": "string"
+    },
+    {
+      "key": "noseLength",
+      "label": "Nose Length",
+      "type": "string"
+    },
+    {
+      "key": "mouthSize",
+      "label": "Mouth Size",
+      "type": "string"
+    },
+    {
+      "key": "hair",
+      "label": "Hair",
+      "type": "string"
+    },
+    {
+      "key": "facial_hair",
+      "label": "Facial Hair",
+      "type": "string"
+    },
+    {
+      "key": "eye_color",
+      "label": "Eye Color",
+      "type": "string"
+    },
+    {
+      "key": "voice",
+      "label": "Voice",
+      "type": "string"
+    },
+    {
+      "key": "demeanor",
+      "label": "Demeanor",
+      "type": "string"
+    },
+    {
+      "key": "role",
+      "label": "Role",
+      "type": "string"
+    },
+    {
+      "key": "backstory",
+      "label": "Backstory",
+      "type": "string"
+    },
+    {
+      "key": "personality",
+      "label": "Personality",
+      "type": "string"
+    },
+    {
+      "key": "clothing",
+      "label": "Clothing",
+      "type": "string"
+    },
+    {
+      "key": "accessories",
+      "label": "Accessories",
+      "type": "string"
+    },
+    {
+      "key": "signature_item",
+      "label": "Signature Item",
+      "type": "string"
+    },
+    {
+      "key": "origin",
+      "label": "Place of Origin",
+      "type": "string"
+    },
+    {
+      "key": "affiliation",
+      "label": "Affiliation",
+      "type": "string"
+    },
+    {
+      "key": "tags",
+      "label": "Tags",
+      "type": "string"
+    },
+    {
+      "key": "custom_prompt",
+      "label": "Custom Prompt Add-On",
+      "type": "string"
+    }
+  ],
+  "world": [
+    {
+      "key": "world_name",
+      "label": "World Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "primary_terrain",
+      "label": "Primary Terrain",
+      "type": "text"
+    },
+    {
+      "key": "dominant_culture",
+      "label": "Dominant Culture",
+      "type": "text"
+    },
+    {
+      "key": "tech_level",
+      "label": "Tech Level",
+      "type": "text",
+      "options": [
+        "Primitive",
+        "Pre-Industrial",
+        "Industrial",
+        "Modern",
+        "Futuristic",
+        "Post-Apocalyptic",
+        "Mythic"
+      ]
+    },
+    {
+      "key": "weather_patterns",
+      "label": "Weather Patterns",
+      "type": "text"
+    },
+    {
+      "key": "time_period",
+      "label": "Time Period",
+      "type": "text"
+    },
+    {
+      "key": "notable_features",
+      "label": "Notable Features",
+      "type": "text"
+    },
+    {
+      "key": "color_palette",
+      "label": "Color Palette",
+      "type": "text"
+    },
+    {
+      "key": "visual_style",
+      "label": "Visual Style",
+      "type": "text",
+      "options": [
+        "Photorealistic",
+        "Cartoon",
+        "Stop-motion",
+        "Oil Painting",
+        "Toy Diorama",
+        "Pixel Art",
+        "Watercolor"
+      ]
+    },
+    {
+      "key": "ambient_lighting",
+      "label": "Ambient Lighting",
+      "type": "text"
+    },
+    {
+      "key": "atmosphere_keywords",
+      "label": "Atmosphere Keywords",
+      "type": "text"
+    },
+    {
+      "key": "influences",
+      "label": "Influences",
+      "type": "text"
+    }
+  ],
+  "scene": [
+    {
+      "key": "setting",
+      "label": "Setting",
+      "type": "string"
+    },
+    {
+      "key": "time_of_day",
+      "label": "Time of Day",
+      "type": "string"
+    },
+    {
+      "key": "weather",
+      "label": "Weather",
+      "type": "string"
+    },
+    {
+      "key": "season",
+      "label": "Season",
+      "type": "string"
+    },
+    {
+      "key": "mood",
+      "label": "Mood / Atmosphere",
+      "type": "string"
+    },
+    {
+      "key": "location_type",
+      "label": "Location Type",
+      "type": "string"
+    },
+    {
+      "key": "notable_features",
+      "label": "Notable Features",
+      "type": "string"
+    },
+    {
+      "key": "camera_angle",
+      "label": "Camera Angle",
+      "type": "string"
+    },
+    {
+      "key": "lighting",
+      "label": "Lighting",
+      "type": "string"
+    },
+    {
+      "key": "color_palette",
+      "label": "Color Palette",
+      "type": "string"
+    },
+    {
+      "key": "activity",
+      "label": "Primary Activity / Action",
+      "type": "string"
+    },
+    {
+      "key": "custom_prompt",
+      "label": "Custom Prompt Add-On",
+      "type": "string"
+    }
+  ],
+  "prop": [
+    {
+      "key": "type",
+      "label": "Prop Type",
+      "type": "string"
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "type": "string"
+    },
+    {
+      "key": "color",
+      "label": "Color",
+      "type": "string"
+    },
+    {
+      "key": "size",
+      "label": "Size / Scale",
+      "type": "string"
+    },
+    {
+      "key": "condition",
+      "label": "Condition (new, worn, etc.)",
+      "type": "string"
+    },
+    {
+      "key": "style",
+      "label": "Style / Era",
+      "type": "string"
+    },
+    {
+      "key": "function",
+      "label": "Function / Purpose",
+      "type": "string"
+    },
+    {
+      "key": "engravings",
+      "label": "Engravings / Markings",
+      "type": "string"
+    },
+    {
+      "key": "notable_features",
+      "label": "Notable Features",
+      "type": "string"
+    },
+    {
+      "key": "custom_prompt",
+      "label": "Custom Prompt Add-On",
+      "type": "string"
+    }
+  ],
+  "shot": [
+    {
+      "key": "camera_angle",
+      "label": "Camera Angle",
+      "type": "string"
+    },
+    {
+      "key": "camera_distance",
+      "label": "Camera Distance",
+      "type": "string"
+    },
+    {
+      "key": "composition",
+      "label": "Composition Notes",
+      "type": "string"
+    },
+    {
+      "key": "focus",
+      "label": "Focus / Depth of Field",
+      "type": "string"
+    },
+    {
+      "key": "lighting",
+      "label": "Lighting Style",
+      "type": "string"
+    },
+    {
+      "key": "color_palette",
+      "label": "Color Palette",
+      "type": "string"
+    },
+    {
+      "key": "vfx",
+      "label": "Visual Effects / Stylization",
+      "type": "string"
+    },
+    {
+      "key": "lens_type",
+      "label": "Lens Type",
+      "type": "string"
+    },
+    {
+      "key": "aspect_ratio",
+      "label": "Aspect Ratio",
+      "type": "string"
+    },
+    {
+      "key": "custom_prompt",
+      "label": "Custom Prompt Add-On",
+      "type": "string"
+    }
+  ],
+  "event": [
+    {
+      "key": "event_type",
+      "label": "Event Type",
+      "type": "string"
+    },
+    {
+      "key": "location",
+      "label": "Location",
+      "type": "string"
+    },
+    {
+      "key": "time_of_day",
+      "label": "Time of Day",
+      "type": "string"
+    },
+    {
+      "key": "weather",
+      "label": "Weather Conditions",
+      "type": "string"
+    },
+    {
+      "key": "participants",
+      "label": "Participants",
+      "type": "string"
+    },
+    {
+      "key": "tone",
+      "label": "Tone / Mood",
+      "type": "string"
+    },
+    {
+      "key": "background_activity",
+      "label": "Background Activity",
+      "type": "string"
+    },
+    {
+      "key": "notable_actions",
+      "label": "Notable Actions or Moments",
+      "type": "string"
+    },
+    {
+      "key": "soundscape",
+      "label": "Soundscape / Noise",
+      "type": "string"
+    },
+    {
+      "key": "custom_prompt",
+      "label": "Custom Prompt Add-On",
+      "type": "string"
+    }
+  ],
+  "frame": [
+    {
+      "key": "compiled_prompt",
+      "label": "Compiled Prompt",
+      "type": "string"
+    },
+    {
+      "key": "character_card",
+      "label": "Character Card",
+      "type": "string"
+    },
+    {
+      "key": "world_card",
+      "label": "World Card",
+      "type": "string"
+    },
+    {
+      "key": "scene_card",
+      "label": "Scene Card",
+      "type": "string"
+    },
+    {
+      "key": "prop_card",
+      "label": "Prop Card",
+      "type": "string"
+    },
+    {
+      "key": "event_card",
+      "label": "Event Card",
+      "type": "string"
+    },
+    {
+      "key": "shot_card",
+      "label": "Shot Card",
+      "type": "string"
+    }
+  ]
+}

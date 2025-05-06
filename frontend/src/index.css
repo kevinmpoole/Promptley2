@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Base Theme === */
+:root {
+  --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #18181b; /* zinc-950 base */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Global Elements === */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+a {
+  font-weight: 500;
+  color: #60a5fa; /* blue-400 */
+  text-decoration: none;
+}
+a:hover {
+  color: #3b82f6; /* blue-500 */
+}
+
+/* === Button Resets === */
+button {
+  @apply rounded-md border border-transparent px-4 py-2 text-sm font-medium transition-colors duration-200;
+  background-color: #1f2937; /* zinc-800 */
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #60a5fa;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+/* === Input/Select Styling === */
+input,
+select,
+textarea {
+  @apply bg-zinc-800 text-white text-sm border border-zinc-700 rounded px-3 py-2 transition-all w-full;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+  outline: none;
+}
+
+/* === Light Mode Overrides === */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a {
+    color: #2563eb; /* blue-600 */
+  }
+
+  button {
+    background-color: #f3f4f6; /* gray-100 */
+    color: #111827;
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #ffffff;
+    color: #111827;
+    border-color: #d1d5db;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+}

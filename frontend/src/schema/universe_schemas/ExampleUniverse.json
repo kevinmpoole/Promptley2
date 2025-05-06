@@ -1,0 +1,76 @@
+{
+  "character": [
+    {
+      "key": "name",
+      "label": "Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "type": "number"
+    },
+    {
+      "key": "gender",
+      "label": "Gender",
+      "type": "select",
+      "options": ["male", "female", "non-binary", "???"]
+    },
+    {
+      "key": "appearance",
+      "label": "Appearance",
+      "type": "group",
+      "children": [
+        { "key": "hair", "label": "Hair", "type": "text" },
+        { "key": "eyes", "label": "Eyes", "type": "text" },
+        { "key": "hat", "label": "Hat Type", "type": "text" },
+        { "key": "glasses", "label": "Glasses", "type": "toggle" }
+      ]
+    },
+    {
+      "key": "backstory",
+      "label": "Backstory",
+      "type": "text"
+    }
+  ],
+
+  "world": [
+    {
+      "key": "world_name",
+      "label": "World Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "primary_terrain",
+      "label": "Primary Terrain",
+      "type": "select",
+      "options": ["desert", "jungle", "ice", "void", "ocean"]
+    },
+    {
+      "key": "style_pass",
+      "label": "Style Pass",
+      "type": "text"
+    }
+  ],
+
+  "prop": [
+    {
+      "key": "name",
+      "label": "Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "type": "text"
+    },
+    {
+      "key": "owned_by",
+      "label": "Owned By",
+      "type": "text"
+    }
+  ]
+}

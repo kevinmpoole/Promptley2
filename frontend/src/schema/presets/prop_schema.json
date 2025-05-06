@@ -1,0 +1,54 @@
+[
+  { "key": "name", "label": "Name", "type": "string", "required": true },
+
+  {
+    "key": "category",
+    "label": "Prop Category",
+    "type": "string",
+    "options": ["Weapon", "Tool", "Instrument", "Relic", "Container", "Decor", "Tech", "Wearable", "Other"]
+  },
+
+  { "key": "material", "label": "Primary Material", "type": "string" },
+  { "key": "color", "label": "Dominant Color", "type": "string" },
+  { "key": "size", "label": "Size/Scale (e.g. handheld, massive)", "type": "string" },
+  { "key": "weight", "label": "Apparent Weight", "type": "string" },
+
+  {
+    "key": "condition",
+    "label": "Wear & Condition",
+    "type": "string",
+    "options": ["Pristine", "Worn", "Rusted", "Cracked", "Glowing", "Fractured", "Modified", "Other"]
+  },
+
+  {
+    "key": "function",
+    "label": "Function or Use",
+    "type": "string"
+  },
+
+  {
+    "key": "symbolism",
+    "label": "Symbolic or Narrative Significance",
+    "type": "string"
+  },
+
+  {
+    "key": "origin",
+    "label": "Origin Culture or World",
+    "type": "string"
+  },
+
+  {
+    "key": "design_style",
+    "label": "Design Aesthetic",
+    "type": "string",
+    "options": ["Medieval", "Futuristic", "Steampunk", "Alien", "Fantasy", "Industrial", "Rustic", "Modern", "Minimalist", "Other"]
+  },
+
+  { "key": "iconography", "label": "Symbols or Markings", "type": "string" },
+  { "key": "mechanics", "label": "Moving Parts or Mechanism", "type": "string" },
+  { "key": "energy_type", "label": "Power Source or Magic Type", "type": "string" },
+  { "key": "associated_character", "label": "Belongs To / Used By", "type": "string" },
+  { "key": "stored_location", "label": "Common Storage or Placement", "type": "string" },
+  { "key": "extra_notes", "label": "Visual or Lore Notes", "type": "string" }
+]
