@@ -3,6 +3,14 @@ import React from "react"
 import { useDrag } from "react-dnd"
 import { CardType } from "../types/CardTypes"
 
+export interface TimelineFrameData extends MiniCardData {
+  world?: string;
+  scene?: string;
+  shot?: string;
+  characters?: string[];
+  props?: string[];
+}
+
 export interface MiniCardData {
   id: string
   name: string

@@ -1,0 +1,17 @@
+{
+  "name": "Colliseum",
+  "cardType": "scene",
+  "thumbnail": "Prompt_Test/thumbnails/colliseum_39d94ce0.png",
+  "prompt": "Colliseum: Set in an unknown place during midday. \n    Weather conditions are sunny.\n    Mood: \u2014.\n    Key objects present: none.\n    Visual style: natural.",
+  "attributes": {
+    "scene_name": "Gladiator battle",
+    "environment_type": "Outdoor",
+    "geographic_location": "rome",
+    "prompt": "Colliseum: Set in an unknown place during midday. \n    Weather conditions are sunny.\n    Mood: \u2014.\n    Key objects present: none.\n    Visual style: natural.",
+    "landscape_features": "ancient rome",
+    "weather": "sunny",
+    "time_of_day": "midday",
+    "season": "summer",
+    "lighting_conditions": "bright"
+  }
+}

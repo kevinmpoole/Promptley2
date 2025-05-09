@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-router-dom": "^7.5.3"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.0",
+    "@types/node": "^22.15.3",
+    "@types/react-beautiful-dnd": "^13.1.8"
+  }
+}

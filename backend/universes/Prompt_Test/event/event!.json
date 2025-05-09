@@ -1,0 +1,9 @@
+{
+  "name": "EVENT!",
+  "cardType": "event",
+  "thumbnail": null,
+  "prompt": "EVENT!: A \u2014 event held at an undisclosed location. \n    Participants include: unknown.\n    Outcome: unresolved.\n    Visual style: natural.",
+  "attributes": {
+    "prompt": "EVENT!: A \u2014 event held at an undisclosed location. \n    Participants include: unknown.\n    Outcome: unresolved.\n    Visual style: natural."
+  }
+}

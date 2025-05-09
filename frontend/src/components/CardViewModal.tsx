@@ -81,14 +81,15 @@ export default function CardViewModal({
           )}
 
           {/* Prompt */}
-          {prompt && (
+            {prompt && (
             <div>
-              <label className="text-xs text-zinc-500 uppercase block mb-1">Card Prompt or Description</label>
-              <div className="bg-zinc-900 text-zinc-300 text-sm p-3 rounded border border-zinc-700 whitespace-pre-wrap leading-snug">
-                {prompt}
-              </div>
+                <label className="text-xs text-zinc-500 uppercase block mb-1">Card Prompt or Description</label>
+                <div className="bg-zinc-800 text-zinc-300 text-sm p-4 rounded border border-zinc-700 whitespace-pre-wrap leading-snug shadow-md">
+                <pre className="whitespace-pre-wrap break-words">{prompt}</pre>
+                </div>
             </div>
-          )}
+            )}
+
 
           {/* Attribute Grid */}
           <div className="grid grid-cols-2 gap-4">

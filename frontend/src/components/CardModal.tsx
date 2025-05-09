@@ -75,6 +75,14 @@ export const CardModal: React.FC<CardModalProps> = ({ card, onClose }) => {
             No image available
           </div>
         )}
+        {attributes?.prompt && (
+          <div className="bg-zinc-800 p-3 rounded mb-4 text-zinc-300">
+            <strong>Prompt Description:</strong>
+            <p className="mt-2 text-sm text-zinc-400 whitespace-pre-line">
+              {attributes.prompt}
+            </p>
+          </div>
+        )}
 
         <div className="text-sm text-zinc-300 space-y-1">
           {universe && (

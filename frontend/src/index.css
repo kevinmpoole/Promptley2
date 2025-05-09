@@ -106,3 +106,26 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
   }
 }
+/* === Main Content Styling === */
+#main-content {
+  min-height: 100vh; /* Ensures it always fills the vertical space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Card Browser Fix === */
+.card-browser {
+  min-height: calc(100vh - 64px); /* Accounts for header height */
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
+
+/* === Card Overflow Handling === */
+.card-viewer {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.card-viewer.expanded {
+  max-height: 600px; /* Controlled expansion */
+}

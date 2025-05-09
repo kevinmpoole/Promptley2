@@ -1,0 +1,18 @@
+ {
+  "cardType": "scene",
+  "name": "dodge_city_saloon",
+  "thumbnail": "dodge_city_saloon_thumb.png",
+  "prompt": "",
+  "attributes": {
+    "id": "dodge_city_saloon",
+    "tags": [],
+    "visual_style": "",
+    "location": "",
+    "tone": "",
+    "key_objects": [],
+    "time": "",
+    "characters_present": [],
+    "narrative_context": "",
+    "notes": ""
+  }
+}

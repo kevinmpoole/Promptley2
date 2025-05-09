@@ -1,0 +1,31 @@
+{
+  "name": "Buckley",
+  "cardType": "character",
+  "thumbnail": null,
+  "prompt": null,
+  "attributes": {
+    "id": "buckley",
+    "height": "6'3\"",
+    "weight": "240 lbs",
+    "hair": "Dark brown, styled voluminous",
+    "beard": "Auburn, full",
+    "eyes": "Hazel",
+    "glasses": "Gold-rimmed",
+    "hat": "Light tan cowboy hat",
+    "outfit": "Vintage-style western suit",
+    "jacket": "Light blue with maroon embroidery",
+    "vest": "Deep maroon",
+    "pants": "Tan",
+    "belt_buckle": "Gold 'LPK'",
+    "boots": "Cowboy boots",
+    "accessories": [
+      "glowing lasso",
+      "mother\u2019s revolver",
+      "harmonica"
+    ],
+    "origin": "Dodge City, 1887",
+    "mother": "Ada Blackwell",
+    "father": "Dustin O\u2019Brine",
+    "notes": "Grizzled, clever, honorable. Refuses to part with his revolver. Fears being misunderstood. Real name: Buckley Blackwell. Sometimes called 'BW' by Seamus."
+  }
+}

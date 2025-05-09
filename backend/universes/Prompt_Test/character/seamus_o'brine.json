@@ -1,0 +1,50 @@
+{
+  "name": "Seamus O'Brine",
+  "cardType": "character",
+  "thumbnail": "Prompt_Test/thumbnails/seamus_o'brine_5509cee5.png",
+  "prompt": "Seamus O'Brine: A Human Male, approximately 40 years old, standing 73 inches tall with a Athletic physique. \n  Skin tone is Fair, eye color is blue, and hair is \u2014 styled in a Short. \n  Facial hair: Beard. Face structure is oval with average eye spacing, narrow jaw width, medium nose length, and medium mouth size.\n  \n  Typical pose: fit and alert. Usual expression: inquisitive. Outfit: olive pea coat, navy and gold striped shirt, tan pants, brown leather boots. \n  Accessories: navy fiddler's cap with 'HMS LPK' ribbon,leather journal. Signature item: magic compass. \n  Visual style: natural. \n  \n  Setting and Affiliation: unknown.  \n  Visual notes: photorealistic.",
+  "attributes": {
+    "id": "seamus",
+    "role": "Hero",
+    "origin": "Kenmare, Ireland",
+    "affiliation": "Dust & Brine",
+    "tags": [
+      "irish",
+      "time traveler",
+      "quiet leader",
+      "writer"
+    ],
+    "age": 40,
+    "gender": "Male",
+    "height": 73,
+    "weight": 190,
+    "build": "Athletic",
+    "skin_tone": "Fair",
+    "faceShape": "oval",
+    "eyeSpacing": "average",
+    "jawWidth": "narrow",
+    "noseLength": "medium",
+    "mouthSize": "medium",
+    "eye_color": "blue",
+    "hair": "medium-length light brown",
+    "facial_hair": "Beard",
+    "voice": "soft but deliberate, slight Irish accent",
+    "demeanor": "thoughtful, reserved",
+    "personality": "introverted, loyal, curious, skeptical of authority",
+    "clothing": "olive pea coat, mustard/navy sweater, brown pants",
+    "accessories": [
+      "navy fiddler's cap with 'HMS LPK' ribbon",
+      "leather journal"
+    ],
+    "signature_item": "magic compass",
+    "backstory": "Born in Ireland in 1885. Lost his mother young. Grew up partially in Dodge City. Returned to the sea. Inherits compass from his mother.",
+    "title": "Seamus",
+    "prompt": "Seamus O'Brine: A Human Male, approximately 40 years old, standing 73 inches tall with a Athletic physique. \n  Skin tone is Fair, eye color is blue, and hair is \u2014 styled in a Short. \n  Facial hair: Beard. Face structure is oval with average eye spacing, narrow jaw width, medium nose length, and medium mouth size.\n  \n  Typical pose: fit and alert. Usual expression: inquisitive. Outfit: olive pea coat, navy and gold striped shirt, tan pants, brown leather boots. \n  Accessories: navy fiddler's cap with 'HMS LPK' ribbon,leather journal. Signature item: magic compass. \n  Visual style: natural. \n  \n  Setting and Affiliation: unknown.  \n  Visual notes: photorealistic.",
+    "species": "Human",
+    "hairstyle": "Short",
+    "pose": "fit and alert",
+    "outfit": "olive pea coat, navy and gold striped shirt, tan pants, brown leather boots",
+    "expression": "inquisitive",
+    "visual_notes": "photorealistic"
+  }
+}

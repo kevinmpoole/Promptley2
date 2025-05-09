@@ -1,44 +1,45 @@
-// frontend/src/components/CardViewer.tsx
-
-import { CardType } from "../types/CardTypes"
+import { useState } from "react";
+import { CardType } from "../types/CardTypes";
+import {
+  buildEntityPrompt,
+  buildWorldPrompt,
+  buildScenePrompt,
+  buildPropPrompt,
+  buildShotPrompt,
+  buildEventPrompt,
+  buildFramePrompt,
+} from "./builders/EntityPromptBuilder";
 
 interface CardViewerProps {
-  name: string
-  cardType: CardType
-  universe: string
-  thumbnail?: string
-  attributes?: Record<string, any>
-  onClick?: () => void
+  name: string;
+  cardType: CardType;
+  universe: string;
+  thumbnail?: string;
+  attributes?: Record<string, any>;
+  onClick?: () => void;
+  onEdit?: () => void;
+  onDelete?: () => void;
+  onVariant?: () => void;
 }
 
 const resolveThumbnailUrl = (thumbPath: string | undefined, universe: string): string | undefined => {
-  if (!thumbPath) return undefined
+  if (!thumbPath) return undefined;
 
-  // Already absolute or root-relative
-  if (thumbPath.startsWith("http") || thumbPath.startsWith("/")) return thumbPath
-
-  // If already includes full 'universes/universe/thumbnails' structure
+  if (thumbPath.startsWith("http") || thumbPath.startsWith("/")) return thumbPath;
   if (thumbPath.startsWith(`universes/${universe}/thumbnails/`)) {
-    return `/${thumbPath}`
+    return `/${thumbPath}`;
   }
-
-  // If backend returned 'test_universe/thumbnails/filename.png'
   if (thumbPath.startsWith(`${universe}/thumbnails/`)) {
-    return `/universes/${thumbPath}`
+    return `/universes/${thumbPath}`;
   }
-
-  // If it's just 'thumbnails/filename.png'
   if (thumbPath.startsWith("thumbnails/")) {
-    return `/universes/${universe}/${thumbPath}`
+    return `/universes/${universe}/${thumbPath}`;
   }
 
-  // Otherwise treat as raw filename
-  return `/universes/${universe}/thumbnails/${thumbPath}`
-}
-// after the CardViewer component...
-export { resolveThumbnailUrl }
+  return `/universes/${universe}/thumbnails/${thumbPath}`;
+};
 
-
+export { resolveThumbnailUrl };
 
 const borderColorByType: Record<CardType, string> = {
   character: "border-blue-500",
@@ -48,70 +49,107 @@ const borderColorByType: Record<CardType, string> = {
   shot: "border-pink-500",
   event: "border-orange-500",
   frame: "border-white",
-}
+};
+
+const getPromptBuilder = (cardType: CardType) => {
+  switch (cardType) {
+    case "character":
+      return buildEntityPrompt;
+    case "world":
+      return buildWorldPrompt;
+    case "scene":
+      return buildScenePrompt;
+    case "prop":
+      return buildPropPrompt;
+    case "shot":
+      return buildShotPrompt;
+    case "event":
+      return buildEventPrompt;
+    case "frame":
+      return buildFramePrompt;
+    default:
+      return (attributes: Record<string, any>) => "No prompt available.";
+  }
+};
 
 export function CardViewer({
   name,
   cardType,
   universe,
   thumbnail,
-  attributes,
+  attributes = {},
   onClick,
+  onEdit,
+  onDelete,
+  onVariant,
 }: CardViewerProps) {
   console.log("💥 raw thumbnail prop:", thumbnail);
-  const resolvedThumb = resolveThumbnailUrl(thumbnail, universe)
-  console.log("🧪 [CardViewer] Resolved:", resolvedThumb, "| Raw:", thumbnail)
+  const resolvedThumb = resolveThumbnailUrl(thumbnail, universe);
+  console.log("🧪 [CardViewer] Resolved:", resolvedThumb, "| Raw:", thumbnail);
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsExpanded(!isExpanded);
+  };
+
+  const promptBuilder = getPromptBuilder(cardType);
+  const prompt = promptBuilder(attributes);
 
   return (
     <div
       onClick={onClick}
-      className={`bg-zinc-900 rounded-xl shadow-xl ring-1 ring-zinc-700 hover:ring-blue-500 
-        transition-all cursor-pointer overflow-hidden group border ${borderColorByType[cardType]}`}
+      className={`bg-zinc-900 rounded-xl shadow-lg ring-1 ring-zinc-700 hover:ring-blue-500 
+          transition-all cursor-pointer overflow-hidden group border ${borderColorByType[cardType]} 
+          hover:shadow-blue-500/30 hover:scale-[0.97] duration-300 relative`}
+      style={{ width: "100%", height: "100%" }}
     >
-      <div className="aspect-square bg-zinc-800 relative overflow-hidden border-b border-zinc-700">
+      <div className="relative aspect-[3/4] bg-zinc-800 overflow-hidden border-b border-zinc-700">
         {resolvedThumb ? (
           <img
             src={resolvedThumb}
             alt={name}
-            className="w-full h-[300px] object-cover rounded"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            onError={(e) => {
+              console.warn("❌ Image failed to load:", e.currentTarget.src);
+              e.currentTarget.src = "/images/fallback-thumbnail.png";
+            }}
           />
         ) : (
-          <div className="w-full h-[300px] bg-zinc-800 flex items-center justify-center text-zinc-500 text-sm italic">
-            No image
+          <div className="w-full h-full bg-zinc-800 flex items-center justify-center text-zinc-500 text-sm italic">
+            No image available
           </div>
         )}
+
+     
       </div>
 
-      <div className="p-4 space-y-1">
-        <h3 className="text-white text-base font-semibold truncate">{name}</h3>
+      <div className="p-2 space-y-1">
+        <h3 className="text-white text-sm font-semibold truncate">{name}</h3>
         <p className="text-zinc-400 text-xs capitalize">{cardType} Card</p>
 
-        {attributes && (
-          <ul className="text-sm mt-2 space-y-1">
-            {Object.entries(attributes).map(([key, value]) => {
-              if (key === "prompt") return null
-              const displayValue =
-                typeof value === "object"
-                  ? Object.entries(value)
-                      .map(([k, v]) => `${k}: ${v}`)
-                      .join(", ")
-                  : String(value)
-              return (
-                <li key={key} className="text-zinc-300 text-xs">
-                  <span className="font-medium text-zinc-400">{key}:</span>{" "}
-                  {displayValue}
-                </li>
-              )
-            })}
-          </ul>
+        {prompt && (
+          <div
+            className={`mt-2 text-xs text-zinc-400 italic whitespace-pre-wrap transition-all duration-300 ${
+              isExpanded ? "max-h-[600px]" : "max-h-0 overflow-hidden"
+            }`}
+          >
+            <span className="block p-2 bg-zinc-800 rounded-md border border-zinc-700">
+              “{prompt}”
+            </span>
+          </div>
         )}
 
-        {attributes?.prompt && (
-          <div className="mt-2 text-xs text-zinc-400 italic truncate">
-            “{attributes.prompt}”
-          </div>
+        {prompt && (
+          <button
+            onClick={toggleExpand}
+            className="text-blue-400 text-xs mt-2 hover:text-blue-500 focus:outline-none"
+          >
+            {isExpanded ? "Show Less ▲" : "Show More ▼"}
+          </button>
         )}
       </div>
     </div>
-  )
+  );
 }

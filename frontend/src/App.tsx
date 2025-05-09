@@ -7,11 +7,12 @@ import CardBrowser from "./pages/CardBrowser"
 import Layout from "./layouts/Layout"
 import CardCreator from "./pages/CardCreator"
 import ShotBuilder from "pages/ShotBuilder"
-import TimelineEditor from "pages/TimelineEditor"
+import TimelineEditor from './pages/TimelineEditor';
 import PromptBuilder from "pages/PromptBuilder"
 import FaceMaker from "./pages/FaceMaker"
 import MagicPrompts from "./pages/MagicPrompts"
 import TimeFrame from "pages/TimeFrame"
+import PromptPage from "pages/PromptPage"
 
 
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route index element={<CardBrowser />} />
         <Route path="designer" element={<CardDesigner />} />
         <Route path="browser" element={<CardBrowser />} />
+        <Route path="prompt" element={<PromptPage />} />
         <Route path="creator" element={<CardCreator/>} />
         <Route path="face-maker" element={<FaceMaker />} />
         <Route path="shot-builder" element={<ShotBuilder />} />

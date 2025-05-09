@@ -1,0 +1,42 @@
+{
+  "cardType": "character",
+  "name": "seamus",
+  "thumbnail": null,
+  "prompt": "seamus holding compass on windswept cliff",
+  "attributes": {
+    "id": "seamus",
+    "role": "navigator and journal keeper",
+    "origin": "Kenmare, Ireland",
+    "affiliation": "Dust & Brine",
+    "tags": ["irish", "time traveler", "quiet leader", "writer"],
+
+    "age": 40,
+    "gender": "male",
+    "height": 73,
+    "weight": 190,
+    "build": "lean",
+    "skin_tone": "pale with freckles",
+
+    "faceShape": "oval",
+    "eyeSpacing": "average",
+    "jawWidth": "narrow",
+    "noseLength": "medium",
+    "mouthSize": "medium",
+    "eye_color": "blue",
+    "hair": "medium-length light brown",
+    "facial_hair": "full auburn beard",
+
+    "voice": "soft but deliberate, slight Irish accent",
+    "demeanor": "thoughtful, reserved",
+    "personality": "introverted, loyal, curious, skeptical of authority",
+
+    "clothing": "olive pea coat, mustard/navy sweater, brown pants",
+    "accessories": [
+      "navy fiddler's cap with 'HMS LPK' ribbon",
+      "leather journal"
+    ],
+    "signature_item": "magic compass",
+
+    "backstory": "Born in Ireland in 1885. Lost his mother young. Grew up partially in Dodge City. Returned to the sea. Inherits compass from his mother."
+  }
+}

@@ -195,7 +195,7 @@ export default function CardBrowser() {
   }, [universe, selectedType])
 
   useEffect(() => {
-    const schemaSafeTypes: CardType[] = ["character", "world", "scene", "prop", "event", "frame"]
+    const schemaSafeTypes: CardType[] = ["character", "world", "scene", "prop", "shot", "event", "frame"]
     if (universe && selectedType !== "all" && schemaSafeTypes.includes(selectedType)) {
       getSchemaForCardType(selectedType, universe).then(setSchemaFields)
     } else {
@@ -215,7 +215,7 @@ export default function CardBrowser() {
 
   const filteredCards = cards
     .filter((c) => selectedType === "all" || c.cardType === selectedType)
-    .filter((c) => c.name.toLowerCase().includes(search.toLowerCase()))
+    .filter((c) => (c.name ?? "").toLowerCase().includes((search ?? "").toLowerCase()))
     .sort((a, b) => {
       if (!sortKey) return 0
       return String(a[sortKey] ?? "").localeCompare(String(b[sortKey] ?? ""))
@@ -320,7 +320,6 @@ export default function CardBrowser() {
           onClose={() => setShowForm(false)}
           onSave={handleSave}
           allCards={cards}
-          onVariantSelect={handleVariantSelect}
           onThumbnailSelect={handleThumbnailSelect}
           readOnly={false}
         />
@@ -343,7 +342,8 @@ export default function CardBrowser() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
         {filteredCards.length === 0 ? (
           <div className="text-zinc-500 text-center mt-8 italic col-span-full">
             No cards found for this filter.
@@ -418,7 +418,6 @@ export default function CardBrowser() {
           onClose={() => setSelectedCard(null)}
           onSave={() => {}}
           allCards={cards}
-          onVariantSelect={() => {}}
           readOnly={true}
         />
       )}

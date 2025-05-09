@@ -1,0 +1,18 @@
+{
+  "cardType": "event",
+  "name": "lasso_trick_saloon",
+  "thumbnail": "lasso_trick_saloon_thumb.png",
+  "prompt": "",
+  "attributes": {
+    "id": "lasso_trick_saloon",
+    "tags": [],
+    "visual_style": "",
+    "location": "",
+    "tone": "",
+    "key_objects": [],
+    "time": "",
+    "characters_present": [],
+    "narrative_context": "",
+    "notes": ""
+  }
+}

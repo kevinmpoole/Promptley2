@@ -25,7 +25,8 @@ export default defineConfig({
       // Thumbnail uploads (if used separately)
       '/uploads': 'http://localhost:8000',
       '/thumbnails': 'http://localhost:8000',
-      '/universe_schemas': 'http://localhost:8000'
+      '/universe_schemas': 'http://localhost:8000',
+      '/prompt': 'http://localhost:8000'
     }
   }
 })

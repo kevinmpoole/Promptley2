@@ -26,6 +26,9 @@ export default function Layout() {
         <NavLink to="/browser" className={navLinkClass}>
           Card Deck
         </NavLink>
+        <NavLink to="/prompt" className={navLinkClass}>
+          Prompt Page
+        </NavLink>
         <NavLink to="/face-maker" className={navLinkClass}>
           Face Maker
         </NavLink>

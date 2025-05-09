@@ -1,0 +1,49 @@
+{
+  "character": [
+    {
+      "name": "Buckley Blackwell",
+      "cardType": "character",
+      "thumbnail": "/images/buckley.png"
+    },
+    {
+      "name": "Seamus O'Brine",
+      "cardType": "character",
+      "thumbnail": "/images/seamus.png"
+    }
+  ],
+  "world": [
+    {
+      "name": "Dustlands",
+      "cardType": "world",
+      "thumbnail": "/images/dustlands.png"
+    }
+  ],
+  "scene": [
+    {
+      "name": "Canyon Standoff",
+      "cardType": "scene",
+      "thumbnail": "/images/canyon.png"
+    }
+  ],
+  "prop": [
+    {
+      "name": "Glowing Lasso",
+      "cardType": "prop",
+      "thumbnail": "/images/lasso.png"
+    }
+  ],
+  "shot": [
+    {
+      "name": "Shot 001 - Buckley Draws",
+      "cardType": "shot",
+      "thumbnail": "/images/shot1.png"
+    }
+  ],
+  "event": [
+    {
+      "name": "Lasso Activation",
+      "cardType": "event",
+      "thumbnail": "/images/event_lasso.png"
+    }
+  ]
+}

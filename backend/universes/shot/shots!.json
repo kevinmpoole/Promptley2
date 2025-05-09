@@ -1,0 +1,9 @@
+{
+  "name": "SHOTS!",
+  "cardType": "shot",
+  "thumbnail": "Prompt_Test/thumbnails/shots!_e581f60f.png",
+  "prompt": "SHOTS!: Shot with a standard camera angle, focusing on the main subject. \n    Lighting is standard with no specific motion.\n    Special effects: none.\n    Visual style: natural.",
+  "attributes": {
+    "prompt": "SHOTS!: Shot with a standard camera angle, focusing on the main subject. \n    Lighting is standard with no specific motion.\n    Special effects: none.\n    Visual style: natural."
+  }
+}
